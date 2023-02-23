@@ -12,24 +12,34 @@
 
 <body class="flex-row justify-center">
 
-    <div id="wrapper" class="flex-column margin100px width800px">
+    <div id="wrapper" class="flex-column margin100px width800px height800px">
         <h1>Rock-Paper-Scissors</h1>
         <div id="buttons" class="flex-row justify-center gap20px padding10px">
             <button id="newGame">New Battle</button>
             <button id="restartGame">Restart Battle</button>
+            <button id="showRules">Show rules</button>
         </div>
 
-        <div id="content" class="flex-row">
-            <div id="rules" class="padding10px flexInitial width300px">
+        <div id="content" class="flex-row flex1">
+            <div id="rules" class="padding10px flexInitial flex-column gap20px justify-center width250px">
                 <h3>Rules:</h3>
-                <div id="rulesTable" class="flex-column height500px width300px justify-spaceEvenly gap20px ">
-                    <div id="snowmanBeatFire" class="flexInitial">Snowman beats fire</div>
-                    <div id="fireBeatCatapult" class="flexInitial">Fire beats catapult</div>
-                    <div id="catapultBeatSnowman" class="flexInitial">Catapult beats snowman</div>
+                <div id="rulesTable" class="flex-column gap20px">
+                    <div id="snowmanBeatFire" class="flex1">Giant snowman is a fearsome monster that can sacrifice one
+                        of his limbs to extinguish a fire</span>. There is only one
+                        thing that can destroy him - a direct hit
+                        with a large boulder hurled from a
+                        medieval catapult.
+                    </div>
+                    <div id="fireBeatCatapult" class="flex1">Small fire doesn't stand a chance against a
+                        massive volume of water from dissolved arm of a giant snowman. On the other arm (pun intended),
+                        once a wooden catapult is set on fire, the atmosphere around gets hot rather quickly!</div>
+                    <div id="catapultBeatSnowman" class="flex1">Yes, even a small fire can destroy this mighty siege
+                        weapon,
+                        but not even the greatest snowman can withstand a giant boulder hurled in his way! </div>
                 </div>
             </div>
 
-            <div id="game" class="flex1 flex-column justify-between padding10px">
+            <div id="game" class="flex1 flex-column justify-spaceEvenly padding10px">
                 <div id="computerSide" class="flex-row justify-spaceEvenly height150px">
                     <div id="computerChoice" class="width150px">Computer choice img</div>
                     <div id="computerStats" class="flex-column justify-spaceEvenly width150px">
