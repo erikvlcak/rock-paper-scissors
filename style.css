@@ -1,5 +1,5 @@
 * {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     box-sizing: border-box;
 }
 
@@ -10,8 +10,13 @@ body {
     margin: 0px;
     padding: 0px;
     text-align: center;
+    font-family: 'Urbanist', sans-serif;
 }
 
+button,
+.box-shadow {
+    box-shadow: 2px 2px 5px black;
+}
 
 .flex-row {
     display: flex;
@@ -55,6 +60,10 @@ body {
     padding: 10px;
 }
 
+.padding5px {
+    padding: 5px;
+}
+
 .margin100px {
     margin: 100px;
 }
@@ -62,6 +71,10 @@ body {
 .selected {
     border: 5px orange solid;
     box-shadow: 5px 5px;
+}
+
+.height900px {
+    min-height: 900px;
 }
 
 .height500px {
@@ -76,8 +89,16 @@ body {
     height: 150px;
 }
 
+.height200px {
+    min-height: 200px;
+}
+
 .width150px {
-    width: 150px;
+    min-width: 150px;
+}
+
+.width250px {
+    width: 250px;
 }
 
 .width800px {
@@ -86,4 +107,89 @@ body {
 
 .gap20px {
     gap: 20px;
+}
+
+.gap10px {
+    gap: 10px;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.display-none {
+    display: none;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.border {
+    border: 5px #ffcc5c solid;
+    border-radius: 15px;
+}
+
+.border-small {
+    border: 3px #ffeead solid;
+    border-radius: 15px;
+}
+
+.backgroundColor-main {
+    background-color: #96ceb4;
+}
+
+.backgroundColor-buttons {
+    background-color: rgb(255, 252, 246);
+}
+
+.font-title {
+    font-family: 'Lilita One', cursive;
+    font-weight: 900;
+    font-size: 40px;
+    color: #ff6f69;
+    text-shadow: 3px 3px black;
+}
+
+.font-buttons {
+    font-family: 'Lilita One', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(51, 50, 49);
+}
+
+.backgroundColor-blue {
+    background-color: rgb(151, 199, 250);
+}
+
+.backgroundColor-red {
+    background-color: #ff6f69;
+}
+
+.backgroundColor-brown {
+    background-color: rgb(180, 142, 142);
+}
+
+.backgroundColor-yellow {
+    background-color: #ffcc5c;
+}
+
+.border-bottom {
+    border-bottom: 5px #ffeead solid;
+}
+
+.border-top {
+    border-top: 5px #ffeead solid;
+}
+
+.border-right {
+    border-right: 5px #ffeead solid;
+}
+
+#image {
+    background-size: contain;
 }
