@@ -8,71 +8,109 @@
     <title>Snowman-Fire-Catapult</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Macondo&family=Urbanist:wght@500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="flex-row justify-center">
 
-    <div id="wrapper" class="flex-column margin100px width800px height800px">
-        <h1>Rock-Paper-Scissors</h1>
-        <div id="buttons" class="flex-row justify-center gap20px padding10px">
-            <button id="newGame">New Battle</button>
-            <button id="restartGame">Restart Battle</button>
-            <button id="showRules">Show rules</button>
+    <div id="wrapper" class="box-shadow flex-column margin100px width800px height900px border backgroundColor-main">
+        <h1 class="font-title padding10px">SNOWMAN - FIRE - CATAPULT</h1>
+        <div id="buttons" class="flex-row justify-center gap20px padding10px border-bottom">
+            <button id="newGame" class="strong border-small backgroundColor-buttons padding5px font-buttons">New
+                Battle</button>
+            <button id="restartGame" class="strong border-small backgroundColor-buttons padding5px font-buttons">Restart
+                Battle</button>
+            <button id="showRules" class="strong border-small backgroundColor-buttons padding5px font-buttons">Show
+                rules</button>
         </div>
 
-        <div id="content" class="flex-row flex1">
-            <div id="rules" class="padding10px flexInitial flex-column gap20px justify-center width250px">
-                <h3>Rules:</h3>
+        <div id="gameInterface" class="flex-row flex1">
+
+            <div id="rules" class=" padding10px flexInitial flex-column gap20px justify-center width250px border-right">
+                <h3 class="box-shadow backgroundColor-yellow padding5px border-small font-buttons">Rules:</h3>
                 <div id="rulesTable" class="flex-column gap20px">
-                    <div id="snowmanBeatFire" class="flex1">Giant snowman is a fearsome monster that can sacrifice one
-                        of his limbs to extinguish a fire</span>. There is only one
-                        thing that can destroy him - a direct hit
-                        with a large boulder hurled from a
-                        medieval catapult.
+
+                    <div id="rule1" class="border-small backgroundColor-blue box-shadow">
+                        <div id="rule1Title" class="border-bottom padding5px"><strong>Snowman beats Fire</strong></div>
+                        <div id="rule1Text" class="flex1 text-left padding10px">Snowman is a fearless creature that
+                            can sacrifice one of his limbs to extinguish a fire. There is only onething that can destroy
+                            him - a direct hit with a large boulder hurled from a medieval catapult.
+                        </div>
                     </div>
-                    <div id="fireBeatCatapult" class="flex1">Small fire doesn't stand a chance against a
-                        massive volume of water from dissolved arm of a giant snowman. On the other arm (pun intended),
-                        once a wooden catapult is set on fire, the atmosphere around gets hot rather quickly!</div>
-                    <div id="catapultBeatSnowman" class="flex1">Yes, even a small fire can destroy this mighty siege
-                        weapon,
-                        but not even the greatest snowman can withstand a giant boulder hurled in his way! </div>
+
+                    <div id="rule2" class="border-small backgroundColor-red box-shadow">
+                        <div id="rule2Title" class="border-bottom padding5px"><strong>Fire beats Catapult</strong></div>
+                        <div id="rule2Text" class="flex1 text-left padding10px">Small fire doesn't stand a chance
+                            against a massive volume of water from dissolved arm of a giant snowman. On the other hand,
+                            once a wooden catapult is set on fire, the atmosphere around gets hot rather quickly!</div>
+                    </div>
+
+                    <div id="rule3" class="border-small backgroundColor-brown box-shadow">
+                        <div id="rule3Title" class="border-bottom padding5px"><strong>Catapult beats Snowman</strong>
+                        </div>
+                        <div id="rule3Text" class="flex1 text-left padding10px">Yes, even a small fire can destroy this
+                            mighty siege weapon, but not even the greatest snowman can withstand a giant boulder hurled
+                            in his way!
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div id="game" class="flex1 flex-column justify-spaceEvenly padding10px">
-                <div id="computerSide" class="flex-row justify-spaceEvenly height150px">
-                    <div id="computerChoice" class="width150px">Computer choice img</div>
-                    <div id="computerStats" class="flex-column justify-spaceEvenly width150px">
+            <div id="game" class="flex1 flex-column justify-spaceEvenly padding10px gap20px">
+                <div id="computerSide"
+                    class="box-shadow gap20px backgroundColor-yellow flex-row justify-spaceEvenly align-center height200px border-small">
+                    <div id="computerChoice" class="width150px height150px">
+                        <img class="width150px height150px padding10px border-small" src="./images/snowman-icon.png"
+                            alt="">
+                    </div>
+                    <div id="computerStats"
+                        class="padding10px flex-column justify-spaceEvenly width150px border-small gap10px">
                         <h3>Computer Score</h3>
-                        <div id="computerPointsCounter">100</div>
+                        <div id="computerPointsCounter" class="font-buttons">100</div>
                     </div>
                 </div>
 
-                <div id="resultExplanation">And the winner is...</div>
+                <div id="resultExplanation" class="font-buttons">And the winner is...</div>
 
-                <div id="playerPanel" class="flex-column justify-spaceEvenly gap20px">
-                    <div id="playerSide" class="flex-row justify-spaceEvenly height150px">
-                        <div id="playerChoice" class="width150px">Player choice img</div>
-                        <div id="playerStats" class="flex-column justify-spaceEvenly width150px">
-                            <h3>Player Score</h3>
-                            <div id="playerPointsCounter">100</div>
-                        </div>
+                <div id="playerSide"
+                    class="box-shadow gap20px backgroundColor-yellow flex-row justify-spaceEvenly align-center height200px border-small">
+                    <div id="playerChoice" class="width150px height150px">
+                        <img class="width150px height150px padding10px border-small" src="./images/catapult-icon.png"
+                            alt="">
                     </div>
-                    <div id="playerOptionsMenu" class="flex-column justify-spaceEvenly height100px">
-                        <h3>Choices</h3>
-                        <div id="playerOptions" class="flex-row justify-spaceEvenly gap20px">
-                            <div id="snowman" class="flex1">SNOWMAN</div>
-                            <div id="fire" class="flex1">FIRE</div>
-                            <div id="catapult" class="flex1">CATAPULT</div>
-                        </div>
+                    <div id="playerStats"
+                        class="padding10px flex-column justify-spaceEvenly width150px border-small gap10px">
+                        <h3>Player Score</h3>
+                        <div id="playerPointsCounter" class="font-buttons">100</div>
+                    </div>
+                </div>
+
+                <div id="playerOptionsMenu"
+                    class="box-shadow backgroundColor-yellow flex-column justify-spaceEvenly border-small padding10px">
+                    <h3 class="border-bottom padding5px font-buttons">Choices</h3>
+                    <div id="playerOptions" class="flex-row justify-spaceEvenly gap20px padding10px">
+                        <button id="snowman" class="flex1 font-buttons backgroundColor-blue border-small padding5px">
+                            SNOWMAN</button>
+                        <button id="fire" class="flex1 font-buttons backgroundColor-red border-small padding5px">FIRE
+                        </button>
+                        <button id="catapult" class="flex1 font-buttons backgroundColor-brown border-small padding5px">
+                            CATAPULT
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="turnCounter" class="flex-row justify-center gap20px">
-            <h3>Turns left:</h3>
-            <p id="turnsLeft">10</p>
+        <div id="footer" class="flex-row justify-center gap20px padding10px border-top">
+            <div id="turnCounter"
+                class="flex-row justify-center align-center gap10px border-small padding10px backgroundColor-red">
+                <h3>Turns left:</h3>
+                <p id="turnsLeft" class="font-buttons">10</p>
+            </div>
         </div>
 
     </div>
