@@ -1,5 +1,5 @@
 * {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     box-sizing: border-box;
 }
 
@@ -77,9 +77,8 @@ button,
     margin: 100px;
 }
 
-.selected {
-    border: 5px orange solid;
-    box-shadow: 5px 5px;
+.backgroundColor-orange {
+    background-color: #ffa837;
 }
 
 .min-height1000px {
