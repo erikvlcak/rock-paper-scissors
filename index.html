@@ -17,20 +17,22 @@
 
 <body class="flex-row justify-center">
 
-    <div id="wrapper" class="box-shadow flex-column margin100px width800px height900px border backgroundColor-main">
+    <div id="wrapper"
+        class="box-shadow flex-column margin100px width900px min-height1000px border backgroundColor-main">
         <h1 class="font-title padding10px">SNOWMAN - FIRE - CATAPULT</h1>
-        <div id="buttons" class="flex-row justify-center gap20px padding10px border-bottom">
-            <button id="newGame" class="strong border-small backgroundColor-buttons padding5px font-buttons">New
+        <div id="btnsMenu" class="flex-row justify-center gap20px padding10px border-bottom">
+            <button id="btnRestartGame"
+                class="hover min-width150px strong border-small backgroundColor-buttons padding10px font-buttons min-height50px">Restart
                 Battle</button>
-            <button id="restartGame" class="strong border-small backgroundColor-buttons padding5px font-buttons">Restart
-                Battle</button>
-            <button id="showRules" class="strong border-small backgroundColor-buttons padding5px font-buttons">Show
+            <button id="btnShowRules"
+                class="hover min-width150px strong border-small backgroundColor-buttons padding10px font-buttons min-height50px">Show
                 rules</button>
         </div>
 
         <div id="gameInterface" class="flex-row flex1">
 
-            <div id="rules" class=" padding10px flexInitial flex-column gap20px justify-center width250px border-right">
+            <div id="rules"
+                class="display-none padding10px flexInitial flex-column gap20px justify-center width250px border-right">
                 <h3 class="box-shadow backgroundColor-yellow padding5px border-small font-buttons">Rules:</h3>
                 <div id="rulesTable" class="flex-column gap20px">
 
@@ -62,45 +64,56 @@
 
             <div id="game" class="flex1 flex-column justify-spaceEvenly padding10px gap20px">
                 <div id="computerSide"
-                    class="box-shadow gap20px backgroundColor-yellow flex-row justify-spaceEvenly align-center height200px border-small">
-                    <div id="computerChoice" class="width150px height150px">
-                        <img class="width150px height150px padding10px border-small" src="./images/snowman-icon.png"
-                            alt="">
+                    class="padding5px box-shadow gap20px backgroundColor-yellow flex-row justify-spaceEvenly align-center min-height200px border-small flex1">
+                    <h3 class="min-width180px">Opponent's choice:</h3>
+                    <div id="computerChoice" class="min-width150px height150px">
+                        <img id="computerChoiceImg" class="min-width150px height150px padding10px border-small"
+                            src="./images/questionmark-icon.png" alt="">
                     </div>
-                    <div id="computerStats"
-                        class="padding10px flex-column justify-spaceEvenly width150px border-small gap10px">
-                        <h3>Computer Score</h3>
-                        <div id="computerPointsCounter" class="font-buttons">100</div>
+                    <div id="computerScore"
+                        class="padding10px flex-column justify-spaceEvenly min-width180px border-small gap10px">
+                        <h3>Opponent's Score:</h3>
+                        <div id="computerPointsCounter" class="font-buttons">0</div>
                     </div>
                 </div>
 
                 <div id="resultExplanation" class="font-buttons">And the winner is...</div>
 
                 <div id="playerSide"
-                    class="box-shadow gap20px backgroundColor-yellow flex-row justify-spaceEvenly align-center height200px border-small">
-                    <div id="playerChoice" class="width150px height150px">
-                        <img class="width150px height150px padding10px border-small" src="./images/catapult-icon.png"
-                            alt="">
+                    class="padding5px box-shadow gap20px backgroundColor-yellow flex-row justify-spaceEvenly align-center min-height200px border-small flex1">
+                    <h3 class="min-width180px">Your choice:</h3>
+                    <div id="playerChoice" class="min-width150px height150px">
+                        <img id="playerChoiceImg" class="min-width150px height150px padding10px border-small"
+                            src="./images/questionmark-icon.png" alt="">
                     </div>
-                    <div id="playerStats"
-                        class="padding10px flex-column justify-spaceEvenly width150px border-small gap10px">
-                        <h3>Player Score</h3>
-                        <div id="playerPointsCounter" class="font-buttons">100</div>
+                    <div id="playerScore"
+                        class="padding10px flex-column justify-spaceEvenly min-width180px border-small gap10px">
+                        <h3>Your Score:</h3>
+                        <div id="playerPointsCounter" class="font-buttons">0</div>
                     </div>
                 </div>
 
                 <div id="playerOptionsMenu"
-                    class="box-shadow backgroundColor-yellow flex-column justify-spaceEvenly border-small padding10px">
-                    <h3 class="border-bottom padding5px font-buttons">Choices</h3>
-                    <div id="playerOptions" class="flex-row justify-spaceEvenly gap20px padding10px">
-                        <button id="snowman" class="flex1 font-buttons backgroundColor-blue border-small padding5px">
+                    class="box-shadow backgroundColor-yellow flex-column justify-spaceEvenly border-small padding10px gap10px">
+                    <h3 class="border-bottom padding5px font-buttons flex1 flex-row align-center justify-center">Pick
+                        one option and confirm your choice!
+                    </h3>
+
+                    <div id="playerOptions" class="flex-row justify-spaceEvenly gap20px padding10px flex1">
+                        <button id="snowman"
+                            class="hover flex1 font-buttons backgroundColor-blue border-small padding5px min-height50px">
                             SNOWMAN</button>
-                        <button id="fire" class="flex1 font-buttons backgroundColor-red border-small padding5px">FIRE
+                        <button id="fire"
+                            class="hover flex1 font-buttons backgroundColor-red border-small padding5px min-height50px">FIRE
                         </button>
-                        <button id="catapult" class="flex1 font-buttons backgroundColor-brown border-small padding5px">
+                        <button id="catapult"
+                            class="hover flex1 font-buttons backgroundColor-brown border-small padding5px min-height50px">
                             CATAPULT
                         </button>
                     </div>
+                    <button id="btnConfirmOption"
+                        class="hover min-height50px min-width150px strong border-small backgroundColor-buttons padding5px font-buttons flexInitial">Confirm
+                        choice</button>
                 </div>
             </div>
         </div>
@@ -109,7 +122,7 @@
             <div id="turnCounter"
                 class="flex-row justify-center align-center gap10px border-small padding10px backgroundColor-red">
                 <h3>Turns left:</h3>
-                <p id="turnsLeft" class="font-buttons">10</p>
+                <p id="turnsLeft" class="font-buttons">5</p>
             </div>
         </div>
 
