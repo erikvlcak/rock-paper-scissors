@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', setPageInitialState);
 
 document.querySelector('#btnShowRules').addEventListener('click', toggleRules);
 
-document.querySelector('#playerOptions').addEventListener('click', getPlayerChoice);
+document.querySelectorAll('#playerOptions button').forEach((item) => {
+    item.addEventListener('click', getPlayerChoice);
+})
 
 document.querySelector('#btnRestartGame').addEventListener('click', setPageInitialState);
 
@@ -52,7 +54,7 @@ function toggleRules() {
 };
 
 function getPlayerChoice(e) {
-    resetImagesToInitial();
+    resetComputerImageToInitial();
     enableConfirmBtn();
     switch (e.target.id) {
         case ('snowman'):
@@ -227,6 +229,11 @@ function resetImagesToInitial() {
     document.querySelector('#computerChoiceImg').src = "./images/questionmark-icon.png";
     document.querySelector('#computerChoiceImg').classList.add('box-shadow');
 };
+
+function resetComputerImageToInitial() {
+    document.querySelector('#computerChoiceImg').src = "./images/questionmark-icon.png";
+    document.querySelector('#computerChoiceImg').classList.add('box-shadow');
+}
 
 function resetBackgroundToInitial() {
     document.querySelector('#playerChoiceImg').classList.remove('backgroundColor-red', 'backgroundColor-green', 'backgroundColor-orange');
