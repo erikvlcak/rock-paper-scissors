@@ -1,30 +1,32 @@
 * {
-    /* border: 2px solid red; */
     box-sizing: border-box;
 }
 
 h1,
 h3,
 p,
+a,
 body {
     margin: 0px;
     padding: 0px;
     text-align: center;
     font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 button {
     cursor: pointer;
 }
 
-.hover:hover {
-    color: rgb(0, 0, 0);
-    box-shadow: 4px 4px 7px black;
-}
-
 button,
 .box-shadow {
     box-shadow: 2px 2px 5px black;
+}
+
+.hover:hover {
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 4px 7px black;
 }
 
 .flex-row {
@@ -65,6 +67,14 @@ button,
     text-align: center;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
+.text-left {
+    text-align: left;
+}
+
 .padding10px {
     padding: 10px;
 }
@@ -74,108 +84,11 @@ button,
 }
 
 .margin100px {
-    margin: 100px;
+    margin: 50px;
 }
 
 .backgroundColor-orange {
     background-color: #ffa837;
-}
-
-.min-height1000px {
-    min-height: 1000px;
-}
-
-.height500px {
-    height: 500px;
-}
-
-.min-height50px {
-    min-height: 50px;
-}
-
-.height100px {
-    height: 100px;
-}
-
-.height150px {
-    height: 150px;
-}
-
-.min-height200px {
-    min-height: 200px;
-}
-
-.min-width180px {
-    min-width: 180px;
-}
-
-.min-width150px {
-    min-width: 150px;
-}
-
-.width250px {
-    width: 250px;
-}
-
-.width900px {
-    width: 900px;
-}
-
-.gap20px {
-    gap: 20px;
-}
-
-.gap10px {
-    gap: 10px;
-}
-
-.strong {
-    font-weight: bold;
-}
-
-.display-none {
-    display: none;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.border {
-    border: 5px #ffcc5c solid;
-    border-radius: 15px;
-}
-
-.border-small {
-    border: 3px #ffeead solid;
-    border-radius: 15px;
-}
-
-.backgroundColor-main {
-    background-color: #96ceb4;
-}
-
-.backgroundColor-buttons {
-    background-color: rgb(255, 252, 246);
-}
-
-.font-title {
-    font-family: 'Lilita One', cursive;
-    font-weight: 900;
-    font-size: 40px;
-    color: #ff6f69;
-    text-shadow: 3px 3px black;
-}
-
-.font-buttons {
-    font-family: 'Lilita One', cursive;
-    font-weight: 400;
-    font-size: 20px;
-    color: rgb(47, 46, 46);
 }
 
 .backgroundColor-blue {
@@ -193,6 +106,115 @@ button,
 .backgroundColor-yellow {
     background-color: #ffcc5c;
 }
+
+.backgroundColor-green {
+    background-color: #96ceb4;
+}
+
+.backgroundColor-buttons {
+    background-color: rgb(255, 252, 246);
+}
+
+.backgroundColor-transparent {
+    background-color: transparent;
+}
+
+.height25px {
+    height: 25px;
+}
+
+.min-height50px {
+    min-height: 50px;
+}
+
+.height100px {
+    height: 100px;
+}
+
+.height150px {
+    height: 150px;
+}
+
+.min-height220px {
+    min-height: 220px;
+}
+
+.height500px {
+    height: 500px;
+}
+
+.min-height1000px {
+    min-height: 1000px;
+}
+
+.width25px {
+    width: 25px;
+}
+
+.min-width150px {
+    min-width: 150px;
+}
+
+.min-width200px {
+    min-width: 200px;
+}
+
+.width250px {
+    width: 250px;
+}
+
+.width900px {
+    width: 900px;
+}
+
+.gap10px {
+    gap: 10px;
+}
+
+.gap20px {
+    gap: 20px;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.display-none {
+    display: none;
+}
+
+.border {
+    border: 5px #ffcc5c solid;
+    border-radius: 15px;
+}
+
+.border-small {
+    border: 3px #ffeead solid;
+    border-radius: 15px;
+}
+
+.font-title {
+    font-family: 'Lilita One', cursive;
+    font-weight: 900;
+    font-size: 40px;
+    color: #ff6f69;
+    text-shadow: 3px 3px black;
+}
+
+.font-buttons {
+    font-family: 'Lilita One', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(47, 46, 46);
+}
+
+.font-score {
+    font-family: 'Lilita One', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(47, 46, 46);
+}
+
 
 .border-bottom {
     border-bottom: 5px #ffeead solid;
