@@ -214,6 +214,10 @@ button,
     color: rgb(47, 46, 46);
 }
 
+.color-black {
+    color: black;
+}
+
 .border-bottom {
     border-bottom: 5px #ffeead solid;
 }
