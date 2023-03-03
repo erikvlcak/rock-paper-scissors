@@ -1,9 +1,9 @@
 # Snowman-Campfire-Catapult game
 
-Classic Rock-paper-scissors game with a twist!
+Classic Rock-Paper-Ccissors game with a twist!
 
 Main rules:
-- Get more points than your opponent over 5 turns to win. Choose either snowman, campfire or catapult option and wait After each turn, winner gets 1 point.
+- Get more points than your opponent over 5 turns to win. Choose either Snowman, Campfire or Catapult option. After 3 seconds, your opponent makes a choice on it's own and winner is determined according to these rules: snowman beats campfire, campfire beats catapult, catapult beats snowman. After each turn, winner gets 1 point (or no points in case of a tie).
 
 Features:
 - Opponent's choices are randomly generated.
