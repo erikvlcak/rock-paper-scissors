@@ -2,8 +2,8 @@
 
 Classic Rock-paper-scissors game with a twist!
 
-Rules:
-Get more points than your opponent over 5 turns to win.
+Main rules:
+- Get more points than your opponent over 5 turns to win. Choose either snowman, campfire or catapult option and wait After each turn, winner gets 1 point.
 
 Features:
 - Opponent's choices are randomly generated.
@@ -14,6 +14,8 @@ Features:
 - Moreover, points are distributed according to results and turn counter gets updated. You also regain the ability to choose and confirm your next option. After that, next round is innitiated.
 - After 5 turns, final result is displayed and player is prompted to press Restart Duel button. This button can be pressed at any time during the match, except 3 seconds interval after choice confirmation. Upon pressing, it resets the whole game to initial state.
 - Layout is created purely with Flexbox.
-Main idea of this project was mainly to try out JS DOM manipulation.
+
+Purpose:
+- Demonstration of flexbox and JS DOM manipulation
 
 Have fun and feel free to leave feedback.
