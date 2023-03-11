@@ -14,7 +14,7 @@ Features:
 - Moreover, points are distributed according to results and turn counter gets updated. You also regain the ability to choose and confirm your next option. After that, next round is innitiated.
 - After 5 turns, final result is displayed and player is prompted to press Restart Duel button. This button can be pressed at any time during the match, except 3 seconds interval after choice confirmation. Upon pressing, it resets the whole game to initial state.
 
-Purpose:
+Learning outcomes:
 - Efficient use of Flexbox
 - Practice JS DOM manipulation
 - Practice writing clean code
