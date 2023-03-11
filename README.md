@@ -19,6 +19,6 @@ Purpose:
 - Practice JS DOM manipulation
 - Practice writing clean code
 
-This project was made as a part The Odin Project curriculum.
+This project was made as a part [The Odin Project] (https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) curriculum.
 
 Have fun and feel free to leave feedback.
