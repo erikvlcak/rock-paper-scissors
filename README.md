@@ -19,4 +19,6 @@ Purpose:
 - Practice JS DOM manipulation
 - Practice writing clean code
 
+This project was made as a part of Odin Project Curriculum.
+
 Have fun and feel free to leave feedback.
